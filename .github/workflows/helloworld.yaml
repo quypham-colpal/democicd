@@ -18,6 +18,7 @@ jobs:
   say-hello:
     runs-on: ubuntu-latest
     steps:
+    - if: ${{github.event_name == 'pull_request'}}
     - uses: mheap/github-action-required-labels@v2
       with:
         mode: exactly
