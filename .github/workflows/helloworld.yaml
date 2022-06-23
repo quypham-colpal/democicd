@@ -3,6 +3,6 @@ on:
   push: branches:[main]
 jobs:
   say-hello:
-    runs-on: windown-latest
+    runs-on: ubuntu-latest
     steps:
       - run: echo Hello world
