@@ -5,6 +5,7 @@ on:
       - "!README.md"
       - "!docs/**"
       - "**.js"
+    workflow_dispatch:
     branches:
       - "main"
       - "release/**"
