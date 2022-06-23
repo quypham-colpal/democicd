@@ -11,6 +11,8 @@ on:
       - "main"
       - "release/**"
       - "!dev/**"
+  pull_request:
+    type: [opened, reopened, synchronize]
 
 jobs:
   say-hello:
